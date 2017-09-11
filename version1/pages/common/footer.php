@@ -8,16 +8,5 @@
             </div>
         </div>
     </footer>
-    <script type="text/html" id="news-headline-tpl">
-        <li>
-            <div class="text-center">
-                <a class="news-link" href="" target="_blank">
-                    <img class="news-img"/>
-                    <div class="">
-                        <h4 class="headline"></h4>
-                    </div>
-                </a>
-            </div>
-        </li>
-    </script>
+    
     <script src="./abhnews/src/js/index.js"></script>
