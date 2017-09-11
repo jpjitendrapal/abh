@@ -1,0 +1,168 @@
+#main-ct{
+    margin-top: 60px;
+}
+.change-link{
+    margin-bottom: 10px;
+    position: relative;
+    top: -10px;
+}
+/*slider 1 section*/
+
+#bx1-prev {
+    position: absolute;
+    top: 30%;
+    left: 10px;
+}
+
+#bx1-next {
+    position: absolute;
+    top: 30%;
+    right: 10px;
+}
+
+/*slider 2 section*/
+.heading2.events{
+    border-bottom: none;
+}
+.bxslider-2 .event-name{
+    font-size: 20px;
+}
+.bxslider-2 .event-detail{
+  font-size: 12px;
+  color: blue;
+}
+.bxslider-2-ct {
+    border: 1px solid #e5e5e5;
+    padding-top: 15px;
+}
+.bxslider-2-ct .bx-wrapper{
+    margin-bottom: 27px;
+}
+.bxslider-2-ct .bx-default-pager {
+    top: -95px;
+    right: 0;
+    bottom: inherit;
+    width: inherit;
+}
+
+.bxslider-2-ct .bx-viewport {
+    margin-top: 15px;
+}
+
+.bxslider-2 {
+    padding-left: 15px;
+}
+.bxslider-2 .date{
+    background-color: #D63D03;
+    color: white;
+    padding: 10px 10px 10px 30px;
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+}
+.bxslider-2 .white-triangle {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+/*slider 3 section*/
+
+.bxslider-3-ct .bx-default-pager, .bxslider-4-ct .bx-default-pager {
+    top: -70px;
+    right: 0;
+    bottom: inherit;
+    width: inherit;
+}
+
+/*weather tile section*/
+
+.weather-tile {
+    background-color: #009DEE;
+    color: white;
+    padding: 10px;
+    height: 169px;
+}
+
+.big-news .news-text-ct{
+    position: absolute;
+    color: white;
+    bottom: 0;
+    padding: 5px;
+    font-size: 20px;
+}
+.bxslider-3 .news-heading, .bxslider-4 .news-heading{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+}
+.footer{
+    background-color: #292526;
+    width: 100%;
+    height: 100px;
+    color: white;
+}
+.footer .footer-links{
+    margin-top: 35px;
+}
+.footer .footer-links a{
+    text-decoration: none;
+    color: white;
+}
+.team .member-name{
+    font-size: 18px;
+}
+.team .member-img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 767px){
+    .footer .footer-links a{
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 5px 7px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .events-ct{
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .bxslider-2-ct .bx-default-pager {
+        top: -57px;
+    }
+    .currency-tile-ct {
+        margin-top: 20px;
+    }
+    .bxslider-2 .date{
+        width: 50px;
+        transition: width 0.3s;
+    }
+    .bxslider-2 .date:hover{
+        width: 140px;
+    }
+    .team .member{
+        height: 200px;
+    }
+    .team .member-img{
+        height: 150px;
+    }
+    
+}
+

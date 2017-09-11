@@ -1,0 +1,165 @@
+.navbar-default {
+    background-color: #be2819;
+    color: white;
+    z-index: 10000;
+}
+.navbar-default .navbar-brand{
+    color: white;
+    padding: 0;
+}
+.logo-img{
+    width: 83px;
+}
+
+.navbar-default .navbar-nav>li>a:focus, 
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>li>a
+{
+    color: white;
+    background-color: #be2819;
+}
+.bx-wrapper {
+    box-shadow: none;
+    border: none;
+}
+
+.bx-wrapper img {
+    display: inline-block;
+}
+
+.heading2 {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.heading3 {
+    font-size: 25px;
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+
+.border {
+    border: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.font-15 {
+    font-size: 15px;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+
+.font-22 {
+    font-size: 22px;
+}
+
+.font-30 {
+    font-size: 30px;
+}
+
+.font-35 {
+    font-size: 35px;
+}
+
+.font-50 {
+    font-size: 50px;
+}
+
+.padding-top-20 {
+    padding-top: 20px;
+}
+
+.padding-10 {
+    padding: 10px;
+}
+
+.margin-top-15 {
+    margin-top: 15px;
+}
+.margin-bottom-20{
+    margin-bottom: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: white;
+    border: 1px solid #e5e5e5;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: #ccc;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover {
+    background: #e5e5e5;
+}
+
+.color-black {
+    color: black;
+}
+
+.color-red {
+    color: red;
+}
+
+
+
+.slide-text {
+    height: 50px;	
+    overflow: hidden;
+    position: relative;
+   }
+.slide-text h3 {
+    font-size: 18px;
+    color: #be2819;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);	
+    transform:translateX(100%);
+    /* Apply animation to this element */	
+    -moz-animation: slide-text 25s linear infinite;
+    -webkit-animation: slide-text 25s linear infinite;
+    animation: slide-text 25s linear infinite;
+   }
+   /* Move it (define the animation) */
+   @-moz-keyframes slide-text {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+   }
+   @-webkit-keyframes slide-text {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+   }
+   @keyframes slide-text {
+    0%   { 
+    -moz-transform: translateX(100%); /* Firefox bug fix */
+    -webkit-transform: translateX(100%); /* Firefox bug fix */
+    transform: translateX(100%); 		
+    }
+    100% { 
+    -moz-transform: translateX(-100%); /* Firefox bug fix */
+    -webkit-transform: translateX(-100%); /* Firefox bug fix */
+    transform: translateX(-100%); 
+    }
+   }
+

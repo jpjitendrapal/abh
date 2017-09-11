@@ -12,4 +12,5 @@
     <?php include './pages/common/footer.php';?>
     <!-- Created by: Jitendra Pal -->
 </body>
+
 </html>

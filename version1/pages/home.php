@@ -127,9 +127,9 @@
             <div class="border-bottom heading3">बड़ी ख़बरें</div>
             <ul class="bxslider-3">
                 <li>
-                    <img src="./abhnews/src/img/news/news2.jpg" />
+                    <img src="./abhnews/src/img/news/news2.jpeg" />
                     <div class="news-heading">
-                        <h4>पिता की डाट से नाराज बेटे ने लगाई गोमती नदी में छलांग, मौत</h4>
+                        <h4>नये जिलाधिकारी ने संभाली जिले की कमान जिलाधिकारी मन्नान अख्तर ने आज पदभार ग्रहण कर लिया है</h4>
                     </div>
                 </li>
                 <li>
