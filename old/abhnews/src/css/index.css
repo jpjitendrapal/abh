@@ -24,8 +24,8 @@
 .heading2.events{
     border-bottom: none;
 }
-.bxslider-2 .event-name{
-    font-size: 20px;
+.bxslider-2 .news-title{
+    font-size: 17px;
 }
 .bxslider-2 .event-detail{
   font-size: 12px;
@@ -131,6 +131,7 @@
     margin: 0 auto;
 }
 
+
 @media only screen and (min-width: 767px){
     .footer .footer-links a{
         border: 1px solid white;
@@ -139,8 +140,9 @@
     }
     .modal-dialog{
         margin: 70px auto;
-        width: 750px;
+        width: 700px;
     }
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -168,6 +170,9 @@
     }
     .team .member-img{
         height: 150px;
+    }
+    .modal-dialog{
+        margin: 100px auto;
     }
     
 }
