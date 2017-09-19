@@ -1,0 +1,25 @@
+{
+  "name": "abh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpjitendrapal/abh.git"
+  },
+  "author": "Jitendra Pal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpjitendrapal/abh/issues"
+  },
+  "homepage": "https://github.com/jpjitendrapal/abh#readme",
+  
+  "devDependencies": {
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.3.0"
+  }
+}
