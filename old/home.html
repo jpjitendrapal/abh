@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <!-- Created by: Jitendra Pal -->
 <html>
+
 <head>
     <!-- Created by: Jitendra Pal -->
-<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.7/jquery.bxslider.min.css"
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.7/jquery.bxslider.min.css"
     />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="./abhnews/src/css/index.css" />
@@ -14,216 +15,141 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.7/jquery.bxslider.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/1d8b1d7aa2.js"></script>
 </head>
+
 <body class="">
     <div class="container">
-    <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"><img class="logo-img" src="./abhnews/src/img/home/logo.png" /></a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">About us</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/pages/contactus">Contact us</a></li>
-                        <li><a href="#">Know about us</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="https://techprogrammings.blogspot.in/">Other</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-</nav>
-<div id="main-ct">
-    <div class="slide-text">
-        <h3>Breaking News: भारतीयों ने तैयार की ओस से जल संचयन की तकनीक, इलाहाबाद के डॉक्टरों ने शुरू की ‘द 21 डॉक्टर्स’ मुहिम</h3>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-lg-6 events-ct">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="border heading2 events">
-                        Breaking News
-                    </div>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                    <a class="navbar-brand" href="http://www.abhnews.com/"><img class="logo-img" src="./abhnews/src/img/home/logo.png" /></a>
                 </div>
-                <div class="col-xs-12">
-                    <div class="bxslider-2-ct">
-                        <ul class="bxslider-2">
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fabhnews2017&width=450&height=30&layout=standard&size=large&show_faces=true&appId=511197092397955"
+                                width="450" height="30" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                        </li>
+                        <li><a href="/videos.php" target="_blank">Videos <i class="fa fa-video-camera"></i></i> </a></li>
+                        <li><a href="https://snappy.appypie.com/index/app-download/app_id/3ae68b1d9974" target="_blank">Download App <i class="fa fa-download"></i></i></a></li>
+                        <li><a href="https://www.facebook.com/abhnews2017/" target="_blank">Facebook Page <i class="fa fa-facebook-square"></i> </a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/aboutus.php">About us</a></li>
+                                <li><a href="/contactus.php">Contact us</a></li>
+                                <li><a href="/fbpage.php">FB Posts</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a target="_blank" href="https://techprogrammings.blogspot.in/">Other</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <div id="main-ct">
+            <div class="ticker-news">
+            </div>
+            <div class="row">
+                    <div class="col-xs-12 bxslider-3-ct">
+                        <div class="border-bottom heading3"><b>ABH स्पेशल न्यूज़ </b></div>
+                        <ul class="abh-special-ct row">
                         </ul>
                     </div>
-
+                </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-lg-6 events-ct">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="border heading2 events new-type">
+                                <b>ब्रेकिंग न्यूज़</b>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="bxslider-2-ct">
+                                <ul class="bxslider-2">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-lg-6">
+                    <div class="col-xs-12 big-news">
+                        <a class="news-detail-link" href="">
+                            <img class="img-responsive news-img" src="" />
+                            <div class="news-text-ct">
+                                <div class="news-heading"><strong class="news-title"></strong></div>
+                                <div class="publish-date"></div>
+                                <div class="detail-news hidden"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 bxslider-3-ct">
+                    <div class="border-bottom heading3"><b>बड़ी ख़बरें</b></div>
+                    <ul class="bxslider-3">
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-xs-12 bxslider-7-ct">
+                    <div class="border-bottom heading3 onlineNews"><b>अजब गजब खबरें</b></div>
+                    <ul class="bxslider-7">
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 bxslider-4-ct">
+                    <div class="border-bottom heading3 onlineNews"><b>ताज़ा ख़बरें</b></div>
+                    <ul class="bxslider-4">
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 bxslider-8-ct">
+                    <div class="border-bottom heading3 onlineNews"><b>लोकल खबरें</b></div>
+                    <ul class="bxslider-8">
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 bxslider-8-ct">
+                    <div class="border-bottom heading3 onlineNews"><b>चटपटी खबरें</b></div>
+                    <ul class="bxslider-9">
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 team margin-bottom-20 bxslider">
+                    <div class="border-bottom heading3"><b>हमारे संपादक</b></div>
+                    <ul class="bxslider-5">
+                    </ul>
+                </div>
+            </div>
+            <div class="row hidden">
+                <div class="col-xs-12 team margin-bottom-20 bxslider">
+                    <div class="border-bottom heading3"><b>हमारे संवाददाता</b></div>
+                    <ul class="bxslider-6">
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-lg-6">
-            <div class="col-xs-12 big-news">
-                <img class="img-responsive" src="./abhnews/src/img/news/ahilyabai.jpg" />
-                <div class="news-text-ct">
-                    <!-- <div class="back-mask"></div> -->
-                    <div class="news-heading"><strong>महारानी अहिल्या बाई होल्कर की 292 वीं जयंती पर बेटियों को ग्रेजुऐट की पढाई मुफ्त दिलाने की योजना का आरम्भ</strong></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 bxslider-3-ct">
-            <div class="border-bottom heading3">बड़ी ख़बरें</div>
-            <ul class="bxslider-3">
-               
-                <li>
-                    <img src="./abhnews/src/img/news/news3.jpg" />
-                    <div class="news-heading">
-                        <h4>शिक्षक दिवस पर गृहमंत्री राजनाथ सिंह देंगे लखनऊ मेट्रो का तोहफा</h4>
-                    </div>
-                    <div class="detail-news hidden">This is detail news</div>
-                </li>
-                <li>
-                    <img src="./abhnews/src/img/news/news4.jpg" />
-                    <div class="news-heading">
-                        <h4>ट्रांसफार्मर में धमाके के साथ लगी आग,पास में खड़ी बाइक जलकर राख ,जानमाल का नुकसान</h4>
-                    </div>
-                    <div class="detail-news hidden">This is detail newsThis is detail news
-                    </div>
-                </li>
-                <li>
-                    <img src="./abhnews/src/img/news/news5.jpg" />
-                    <div class="news-heading">
-                        <h4>आधा घंटे के अंदर एक ही जगह पर दो युवकों से मोबाईल लूट</h4>
-                    </div>
-                    <div class="detail-news hidden">This is detail news</div>
-                </li>
-                <li>
-                    <img src="./abhnews/src/img/news/news6.jpg" />
-                    <div class="news-heading">
-                        <h4>कैब्रिज स्कूल में बम की सूचना से मचा हड़कम्म</h4>
-                    </div>
-                    <div class="detail-news hidden">This is detail news</div>
-                </li>
-                <li>
-                    <img src="./abhnews/src/img/news/news7.jpg" />
-                    <div class="news-heading">
-                        <h4>फर्जी आईडी बना फेसबुक पर डाली छात्रा की तश्वीरें</h4>
-                    </div>
-                    <div class="detail-news hidden">This is detail news</div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 bxslider-4-ct">
-            <div class="border-bottom heading3 onlineNews">ताज़ा ख़बरें</div>
-            <ul class="bxslider-4">
-
-            </ul>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 team margin-bottom-20 bxslider">
-            <div class="border-bottom heading3">हमारे संपादक</div>
-            <ul class="bxslider-5">
-                <li>
-                    <a href="https://www.facebook.com/Pnsinghpalpramukhji/" target="_blank">
-                        <div class="member text-center">
-                            <img class="member-img img-responsive" src="./abhnews/src/img/team/prem.jpg" />
-                            <div class="text-center member-name">Prem Narayan Singh Pal</div>
-                            <div class="text-center member-desig">Chief Editor</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/Anoop160" target="_blank">
-                        <div class="  member text-center">
-                            <img class="member-img img-responsive" src="./abhnews/src/img/team/anoop.jpg" />
-                            <div class="text-center member-name">Anoop Pal</div>
-                            <div class="text-center member-desig">Sub Editor</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/Pnsinghpalpramukhji/" target="_blank">
-                        <div class="  member text-center">
-                            <img class="member-img img-responsive" src="./abhnews/src/img/team/deepakpal.jpg" />
-                            <div class="text-center member-name">Deepak Pal</div>
-                            <div class="text-center member-desig">Sub Editor</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/Pnsinghpalpramukhji/" target="_blank">
-                        <div class="  member text-center">
-                            <img class="member-img img-responsive" src="./abhnews/src/img/team/drsurendravikramved.jpg" />
-                            <div class="text-center member-name">Dr. Surendra Vikram Ved</div>
-                            <div class="text-center member-desig">Sub Editor</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/Pnsinghpalpramukhji/" target="_blank">
-                        <div class="  member text-center">
-                            <img class="member-img img-responsive" src="./abhnews/src/img/team/yogeshpal.jpg" />
-                            <div class="text-center member-name">Yogesh Pal</div>
-                            <div class="text-center member-desig">Sub Editor</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/Pnsinghpalpramukhji/" target="_blank">
-                        <div class="  member text-center">
-                            <img class="member-img img-responsive" src="./abhnews/src/img/team/ramakantsingh.jpg" />
-                            <div class="text-center member-name">Ramakant Singh</div>
-                            <div class="text-center member-desig">Sub Editor</div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="row hidden">
-        <div class="col-xs-12 team margin-bottom-20">
-            <div class="border-bottom heading3">हमारे संवाददाता</div>
-            <a href="https://www.facebook.com/Pnsinghpalpramukhji/" target="_blank">
-                <div class="col-xs-6 col-sm-3 member">
-                    <img class="member-img img-responsive" src="./abhnews/src/img/reporters/prem.jpg" />
-                    <div class="text-center member-name">Prem Narayan Singh Pal</div>
-                </div>
-            </a>
-            <a href="https://www.facebook.com/Anoop160" target="_blank">
-                <div class="col-xs-6 col-sm-3 member">
-                    <img class="member-img img-responsive" src="./abhnews/src/img/reporters/anoop.jpg" />
-                    <div class="text-center member-name">Anoop Pal</div>
-                </div>
-            </a>
-            <a href="https://www.facebook.com/Pnsinghpalpramukhji/" target="_blank">
-                <div class="col-xs-6 col-sm-3 member">
-                    <img class="member-img img-responsive" src="./abhnews/src/img/reporters/harish.png" />
-                    <div class="text-center member-name">Harish Pal</div>
-                </div>
-            </a>
-            <a href="https://www.facebook.com/Pnsinghpalpramukhji/" target="_blank">
-                <div class="col-xs-6 col-sm-3 member">
-                    <img class="member-img img-responsive" src="./abhnews/src/img/reporters/prem.jpg" />
-                    <div class="text-center member-name">Prem Narayan Singh Pal</div>
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
     </div>
 
     <footer class="footer">
@@ -236,53 +162,90 @@
             </div>
         </div>
     </footer>
+
     <script type="text/html" id="news-headline-tpl">
         <li>
-            <div class="text-center">
-                    <img class="news-img"/>
+            <a class="news-detail-link" href="">
+                <div class="">
+                    <img class="news-img" />
                     <div class="">
-                        <h4 class="headline"></h4>
+                        <div class="news-title"></div>
                     </div>
+                    <div class="publish-date"></div>
                     <div class="detail-news hidden"></div>
-            </div>
+                </div>
+            </a>
+        </li>
+    </script>
+    <script type="text/html" id="abh-special-tpl">
+        <li class="abh-special col-xs-12 col-sm-6 col-lg-4">
+            <a class="news-detail-link" href="">
+                <div class="news-ct">
+                    <img class="news-img col-xs-5 img-responsive" />
+                    <div class="col-xs-7">
+                        <div class="news-title"></div>
+                        <div class="publish-date"></div>
+                    </div>
+                </div>
+            </a>
+            <hr/>
         </li>
     </script>
 
     <script type="text/html" id="breaking-news-headline-tpl">
         <li>
-            <div class="row">
-                <div class="col-xs-2"><img class="news-img" src="" /></div>
-                <div class="col-xs-9">
-                    <span>
+            <a class="news-detail-link" href="">
+                <div class="row">
+                    <div class="col-xs-2"><img class="news-img" src="" /></div>
+                    <div class="col-xs-9">
+                        <span>
                         <div class="news-title"></div>
+                        <div class="publish-date"></div>
                         <div class="detail-news hidden"></div>
                     </span>
+                    </div>
+                    <div class="date hidden">
+                        <div></div>
+                        <div class="white-triangle"></div>
+                    </div>
                 </div>
-                <div class="date hidden">
-                    <div>02 Jan - 04 Jan</div>
-                    <div class="white-triangle"></div>
-                </div>
-            </div>
+            </a>
         </li>
     </script>
+
+    <script type="text/html" id="editors-tpl">
+        <li>
+            <a class="profile-link" href="" target="_blank">
+                <div class="member text-center">
+                    <img class="member-img img-responsive" src="" />
+                    <div class="text-center member-name"></div>
+                    <div class="text-center member-desig"></div>
+                </div>
+            </a>
+        </li>
+    </script>
+    
 
     <div id="newsDescModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h3 class="modal-title"></h3>
-            </div>
-            <div class="modal-body">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title"></h3>
+                </div>
+                <div class="modal-body">
 
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
+    <script src="./abhnews/src/js/common.js"></script>
     <script src="./abhnews/src/js/index.js"></script>
+
     <!-- Created by: Jitendra Pal -->
 </body>
+
 </html>

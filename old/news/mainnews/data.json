@@ -1,0 +1,22 @@
+{
+    "news": {
+        "type": "mainnews",
+        "items": [
+            {
+                "id": 1,
+                "title": "Ev Rama Swami Periyar Jyanti",
+                "pubDate": "2017-09-15",
+                "image": "./news/mainews/img/news1.jpg",
+                "description": "Ev Rama Swami Periyar Jyanti VIP road fatehpur"
+            }
+            ,{
+                "id": 2,
+                "title": "महारानी अहिल्या बाई होल्कर की 292 वीं जयंती पर बेटियों को ग्रेजुऐट की पढाई मुफ्त दिलाने की योजना का आरम्भ ",
+                "pubDate": "2017-09-15",
+                "image": "./news/mainnews/img/news1.jpg",
+                "description": "महारानी अहिल्या बाई होल्कर की 292 वीं जयंती पर बेटियों को ग्रेजुऐट की पढाई मुफ्त दिलाने की योजना का आरम्भ, महारानी अहिल्या बाई होल्कर की 292 वीं जयंती पर बेटियों को ग्रेजुऐट की पढाई मुफ्त दिलाने की योजना का आरम्भ"
+            }
+            
+        ] 
+    }
+}

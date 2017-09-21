@@ -1,145 +1,273 @@
 var ABHNews = ABHNews || {};
-ABHNews = (function(){
+ABHNews.HomePage = ABHNews.HomePage || {};
+ABHNews.HomePage = (function(){
   var fn, config;
-
+  // 
   config = {
-    newsRssUrl: "https://api.rss2json.com/v1/api.json?rss_url=http://rss.jagran.com/rss/news/national.xml"
+    newsRssUrl: "https://api.rss2json.com/v1/api.json?rss_url=http://rss.jagran.com/rss/news/national.xml",
+    newsDetailLink: "/old/newsdetail.html"
   }
   fn = {
     init: function(){
       fn.showNewsFromNewsData();
-      fn.getOnlineNews();
       fn.bindEvents();
     },
     bindEvents: function(){
-      $(".bxslider-3 li").on("click", function(){
-        var heading, content, news;
-        news = this;
-        heading = $(news).find(".news-heading h4").text();
-        content = "<img src='"+ $(news).find("img").attr("src") +"'>" + $(news).find(".detail-news").text();
-        fn.showNewsModal(heading, content);
-      });
-      $(".bxslider-2 li").on("click", function(){
-        var heading, content, news;
-        news = this;
-        heading = $(news).find(".news-title").text();
-        content = "<img src='"+ $(news).find("img").attr("src") +"'>" + $(news).find(".detail-news").text();
-        fn.showNewsModal(heading, content);
-      });
-    
-      $('.bxslider-2').bxSlider({
-        mode: "vertical",
-        minSlides: 3,
-        maxSlides: 3,
-        slideWidth: 550,
-        slideMargin: 15,
-        moveSlides: 1,
-        controls: false,
-        auto: true,
-        pause: 4000
-      });
-    
-      $('.bxslider-3').bxSlider({
-        minSlides: 2,
-        maxSlides: 4,
-        slideWidth: 280,
-        slideMargin: 5,
-        moveSlides: 1,
-        controls: true,
-        auto: true,
-        pause: 5500
-      });
-    
-      $('.bxslider-5').bxSlider({
-        minSlides: 2,
-        maxSlides: 4,
-        slideWidth: 280,
-        slideMargin: 5,
-        moveSlides: 1,
-        controls: true,
-        auto: true,
-        pause: 4000
-      });
-      $('.bxslider-6').bxSlider({
-        minSlides: 2,
-        maxSlides: 4,
-        slideWidth: 280,
-        slideMargin: 5,
-        moveSlides: 1,
-        controls: true,
-        auto: true,
-        pause: 6000
-      });
-    },
-    showNewsFromNewsData: function(){
-      // show breaking news section
-      var newsData;
       
-      // $.ajax({
-      //   url: "file:///Users/jitendra/Documents/jitendra/github/abh/news/breakingnews/newsData.json",
-      //   success: function(data){
-      //     console.log(data);
-      //     newsData = data;
-      //   },
-      //   error: function(data){
-      //     console.log(data);
-      //   }
-      // });
-      newsData = {
-        "news": {
-            "type": "breaking",
-            "items": [
-                {
-                    "id": 1,
-                    "title": "Ev Rama Swami Periyar Jyanti",
-                    "pubDate": "2017-09-15 09:41:57",
-                    "image": "./news/breakingnews/img/news1.jpg",
-                    "description": "Ev Rama Swami Periyar Jyanti VIP road fatehpur"
-                },
-                {
-                    "id": 2,
-                    "title": "ऑस्ट्रेलिया के खिलाफ 17 सितंबर से शुरू हो रही पांच मैचों की वन-डे सीरीज",
-                    "pubDate": "2017-09-15 09:41:57",
-                    "image": "./news/breakingnews/img/news2.jpg",
-                    "description": "ऑस्ट्रेलिया के खिलाफ 17 सितंबर से शुरू हो रही पांच मैचों की वन-डे सीरीज के पहले तीन मैचों के लिए रविवार को 16 सदस्यीय भारतीय टीम की घोषणा कर दी गई है ऑस्ट्रेलिया के खिलाफ पहले तीन वन-डे के‌ लिए टीम इंडिया का ऐलान, शमी-यादव की वापसी"
-                },
-                {
-                    "id": 3,
-                    "title": "लखनऊ के जुल्फिकार बना रहे 110 फीट ऊंचा मोदी का कटआउट",
-                    "pubDate": "2017-09-15 09:41:57",
-                    "image": "./news/breakingnews/img/news3.jpg",
-                    "description": "लखनऊ के जुल्फिकार बना रहे 110 फीट ऊंचा मोदी का कटआउट"
-                },
-                {
-                    "id": 4,
-                    "title": "नवरात्रि की तैयारियां तेज, मंदिरों में गूंजेंगे मैया के जयकारे",
-                    "pubDate": "2017-09-15 09:41:57",
-                    "image": "./news/breakingnews/img/news4.jpg",
-                    "description": "उरई। 21 सितंबर से नवरात्रि का शुभारंभ हो रहा है। पर्व को देखते हुए तैयारियां भी जोरों से की जा रही है। वहीं, शहर के प्रमुख मंदिरों में भी साफ सफाई व सजावट का दौर शुरू हो गया है। मंदिरों की साफ सफाई के बाद मैया का दरबार सजाया गया। शनिवार से देवी मंदिरों में मैया के जयकारे गूंजेगे। वहीं, घरों में भी महिलाएं तैयारी में व्यस्त रहीं। बाजारों में भी नवरात्र शुरू होने को लेकर खासी चहल, पहल शुरू हो गई है।"
-                }
-            ] 
-        }
-    };
-
-    
-    fn.showBreakingNews(newsData, ".bxslider-2")
-
-
     },
-    showBreakingNews: function(newsData, ct){
+    showNewsFromNewsData: function(url, ct){
+      fn.getLocalNewsData("./news/tickernews/data.json", fn.showTickerNews);
+      fn.getLocalNewsData("./news/mainnews/data.json", fn.showMainNews);
+      fn.getLocalNewsData("./news/breakingnews/data.json", fn.showBreakingNews);
+      fn.getLocalNewsData("./news/bignews/data.json", fn.showBigNews);
+      fn.getLocalNewsData("./news/abhspecialnews/data.json", fn.showABHSpecialNews);
+      fn.getLocalNewsData("./news/ajabnews/data.json", fn.showAjabNews);
+      fn.getLocalNewsData("./news/localnews/data.json", fn.showLocalNews);
+      fn.getLocalNewsData("./news/chatpatinews/data.json", fn.showChatpatiNews);
+      fn.showFreshNews();
+      fn.getLocalNewsData("./news/editors/data.json",fn.showEditors);
+    },
+    getLocalNewsData: function(url, cb){
+      $.ajax({
+        url: url,
+        success: function(data){
+          if(typeof(cb) == 'function'){
+            cb(data);
+          }
+        },
+        error: function(data){
+          if(data.status == "200"){
+            data = JSON.parse(data.responseText);
+            if(typeof(cb) == 'function'){
+              cb(data);
+            }
+          }
+          console.log(data);
+        }
+      });
+    },
+
+    showMainNews: function(newsData){
+      var bigNews = $(".big-news"), item;
+      item = newsData.news.items[newsData.news.items.length-1];
+      bigNews.find(".news-img").attr("src",item.image); 
+      bigNews.find(".news-title").text(item.title);
+      bigNews.find(".detail-news").html(item.description);
+      bigNews.find(".publish-date").text(item.pubDate);
+      bigNews.find(".news-detail-link").attr("href", "/old/newsdetail.html?id="+item.id+"&newstype="+newsData.news.type);
+    },
+    showTickerNews: function(newsData){
+      var data = newsData.news, htm, item;
+      var newsCt = $(".ticker-news");
+      item = data.items[data.items.length-1];
+      htm="<a href="+ config.newsDetailLink +"?id="+item.id+"&newstype="+data.type + "><div>Breaking News: " +item.title + "</div></a>";
+      newsCt.append(htm);
+      newsCt.bxSlider({
+        ticker: true,
+        speed: 10000,
+        tickerHover: true
+      });
+    },
+    showBreakingNews: function(newsData){
       var data = newsData.news;
-      var newsCt = $(ct);
+      var newsCt = $(".bxslider-2");
       for(var key in data.items){
         var item = data.items[key];
         var tpl = $($("#breaking-news-headline-tpl").html());
         tpl.find(".news-img").attr("src",item.image); 
         tpl.find(".news-title").text(item.title);
         tpl.find(".detail-news").html(item.description);
+        tpl.find(".news-detail-link").attr("href", config.newsDetailLink + "?id="+item.id+"&newstype="+data.type);
+        tpl.find(".news-detail-link").attr("data-newsid", item.id);
+        tpl.find(".news-detail-link").attr("data-newstype", data.type);
+        tpl.find(".publish-date").text(item.pubDate);
+        newsCt.append(tpl);
+      }
+      newsCt.bxSlider({
+        mode: "vertical",
+        minSlides: 4,
+        maxSlides: 4,
+        slideWidth: 550,
+        slideMargin: 15,
+        moveSlides: 1,
+        controls: true,
+        auto: true,
+        pause: 7000,
+        infiniteLoop: false,
+        pager: false,
+        hideControlOnEnd: true
+      });
+    },
+
+    showBigNews: function(newsData){
+      var data = newsData.news;
+      var newsCt = $(".bxslider-3");
+      for(var key in data.items){
+        var item = data.items[key];
+        var tpl = $($("#news-headline-tpl").html());
+        tpl.find(".news-img").attr("src",item.image); 
+        tpl.find(".news-title").text(item.title);
+        tpl.find(".detail-news").html(item.description);
+        tpl.find(".news-detail-link").attr("href", config.newsDetailLink + "?id="+item.id+"&newstype="+data.type);
+        tpl.find(".publish-date").text(item.pubDate);
+        tpl.find(".news-detail-link").attr("data-newsid", item.id);
+        tpl.find(".news-detail-link").attr("data-newstype", data.type);
+        newsCt.append(tpl);
+      }
+      newsCt.bxSlider({
+        mode: 'horizontal',
+        minSlides: 2,
+        maxSlides: 7,
+        slideWidth: 200,
+        slideMargin: 10,
+        moveSlides: 1,
+        controls: true,
+        adaptiveHeight: true,
+        infiniteLoop: false,
+        pager: false,
+        hideControlOnEnd: true,
+        prevText: '<i class="fa fa-arrow-circle-o-right"></i>'
+        // ticker: true
+        // auto: true,
+        // pause: 6500
+      });
+    },
+    showABHSpecialNews: function(newsData){
+      var data = newsData.news, count=0, len, maxShow=0;
+      var newsCt = $(".abh-special-ct");
+      len = data.items.length;
+      maxShow = len%3;
+
+      for(count=len-1;count>=maxShow;count--){
+        var item = data.items[count];
+        var tpl = $($("#abh-special-tpl").html());
+        tpl.find(".news-img").attr("src",item.image); 
+        tpl.find(".news-title").text(item.title);
+        tpl.find(".news-detail-link").attr("href", config.newsDetailLink + "?id="+item.id+"&newstype="+data.type);
+        tpl.find(".publish-date").text(item.pubDate);
+        tpl.find(".news-detail-link").attr("data-newsid", item.id);
+        tpl.find(".news-detail-link").attr("data-newstype", data.type);
         newsCt.append(tpl);
       }
     },
+    showAjabNews: function(newsData){
+      var data = newsData.news;
+      var newsCt = $(".bxslider-7");
+      for(var key in data.items){
+        var item = data.items[key];
+        var tpl = $($("#news-headline-tpl").html());
+        tpl.find(".news-img").attr("src",item.image); 
+        tpl.find(".news-title").text(item.title);
+        tpl.find(".detail-news").html(item.description);
+        tpl.find(".news-detail-link").attr("href", config.newsDetailLink + "?id="+item.id+"&newstype="+data.type);
+        tpl.find(".publish-date").text(item.pubDate);
+        tpl.find(".news-detail-link").attr("data-newsid", item.id);
+        tpl.find(".news-detail-link").attr("data-newstype", data.type);
+        newsCt.append(tpl);
+      }
+      newsCt.bxSlider({
+        minSlides: 2,
+        maxSlides: 7,
+        slideWidth: 200,
+        slideMargin: 10,
+        moveSlides: 1,
+        controls: true,
+        adaptiveHeight: true,
+        infiniteLoop: false,
+        pager: false,
+        hideControlOnEnd: true
+        // auto: true,
+        // pause: 7500
+      });
+    },
+    showLocalNews: function(newsData){
+      var data = newsData.news;
+      var newsCt = $(".bxslider-8");
+      for(var key in data.items){
+        var item = data.items[key];
+        var tpl = $($("#news-headline-tpl").html());
+        tpl.find(".news-img").attr("src",item.image); 
+        tpl.find(".news-title").text(item.title);
+        tpl.find(".detail-news").html(item.description);
+        tpl.find(".news-detail-link").attr("href", config.newsDetailLink + "?id="+item.id+"&newstype="+data.type);
+        tpl.find(".publish-date").text(item.pubDate);
+        tpl.find(".news-detail-link").attr("data-newsid", item.id);
+        tpl.find(".news-detail-link").attr("data-newstype", data.type);
+        newsCt.append(tpl);
+      }
+      newsCt.bxSlider({
+        minSlides: 2,
+        maxSlides: 7,
+        slideWidth: 200,
+        slideMargin: 10,
+        moveSlides: 1,
+        controls: true,
+        adaptiveHeight: true,
+        infiniteLoop: false,
+        pager: false,
+        hideControlOnEnd: true
+        // auto: true,
+        // pause: 7000
+      });
+    },
+    showChatpatiNews: function(newsData){
+      var data = newsData.news;
+      var newsCt = $(".bxslider-9");
+      for(var key in data.items){
+        var item = data.items[key];
+        var tpl = $($("#news-headline-tpl").html());
+        tpl.find(".news-img").attr("src",item.image); 
+        tpl.find(".news-title").text(item.title);
+        tpl.find(".detail-news").html(item.description);
+        tpl.find(".news-detail-link").attr("href", config.newsDetailLink + "?id="+item.id+"&newstype="+data.type);
+        tpl.find(".publish-date").text(item.pubDate);
+        tpl.find(".news-detail-link").attr("data-newsid", item.id);
+        tpl.find(".news-detail-link").attr("data-newstype", data.type);
+        newsCt.append(tpl);
+      }
+      newsCt.bxSlider({
+        minSlides: 2,
+        maxSlides: 7,
+        slideWidth: 200,
+        slideMargin: 10,
+        moveSlides: 1,
+        controls: true,
+        adaptiveHeight: true,
+        infiniteLoop: false,
+        pager: false,
+        hideControlOnEnd: true
+        // auto: true,
+        // pause: 7500
+      });
+    },
+    showEditors: function(newsData){
+      var data = newsData.news;
+      var newsCt = $(".bxslider-5");
+      for(var key in data.items){
+        var item = data.items[key];
+        var tpl = $($("#editors-tpl").html());
+        tpl.find(".member-img").attr("src",item.image);
+        tpl.find(".member-name").text(item.name);
+        tpl.find(".member-desig").html(item.designation);
+        tpl.find(".profile-link").attr("href",item.profileLink);
+        newsCt.append(tpl);
+      }
 
-    getOnlineNews: function(){
+      newsCt.bxSlider({
+        minSlides: 2,
+        maxSlides: 7,
+        slideWidth: 150,
+        slideMargin: 35,
+        moveSlides: 1,
+        controls: true,
+        auto: true,
+        pause: 7500,
+        autoHover: true,
+        pager: false,
+      });
+    },
+
+    showFreshNews: function(){
       var url, headline, sliderCt;
       url = config.newsRssUrl;
       headline = $(".bxslider-4-ct .onlineNews");
@@ -151,30 +279,32 @@ ABHNews = (function(){
             for(var key in data.items){
               var item = data.items[key];
               var tpl = $($("#news-headline-tpl").html());
-              tpl.find(".news-img").attr("src",$(item.description).attr("src")); 
-              // tpl.find(".news-link").attr("href", item.link);
-              tpl.find(".headline").text(item.title);
+              tpl.find(".news-img").attr("src",$(item.description).attr("src"));
+              tpl.find(".news-title").text(item.title);
               tpl.find(".detail-news").html(item.content);
+              tpl.find(".publish-date").text(item.pubDate);
               sliderCt.append(tpl);
             }
           }
           
           $('.bxslider-4').bxSlider({
             minSlides: 2,
-            maxSlides: 4,
-            slideWidth: 280,
-            slideMargin: 5,
+            maxSlides: 7,
+            slideWidth: 150,
+            slideMargin: 15,
             moveSlides: 1,
             controls: true,
-            auto: true,
-            pause: 5000
+            infiniteLoop: false,
+            pager: false,
+            hideControlOnEnd: true
           });
           $(".bxslider-4 li").on("click", function(){
             var heading, content, news;
             news = this;
-            heading = $(news).find(".headline").text();
+            heading = $(news).find(".news-title").text();
             content = $(news).find(".detail-news").html();
             fn.showNewsModal(heading, content);
+            return false;
           });
         },
         error: function(error){
@@ -183,6 +313,7 @@ ABHNews = (function(){
   
       });
     },
+
     showNewsModal: function(heading, content, config){
       var newsModal;
       newsModal = $("#newsDescModal");
@@ -199,5 +330,5 @@ ABHNews = (function(){
 
 
 $(document).ready(function(){
-  ABHNews.init();
+  ABHNews.HomePage.init();
 });
