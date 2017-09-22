@@ -14,6 +14,9 @@ ABHNews.NewsDetailPage = (function () {
         updateFbShareBtn: function(){
             $(".fb-share-button").data("href", window.location.href);
         },
+        getImageUrl: function(newsType, imageName){
+            return "./news/" + newsType + "/img/" + imageName;
+        },
         getNewsData: function () {
             config.newsId = ABHNews.CommonUtils.getQueryParam("id");
             config.newsType = ABHNews.CommonUtils.getQueryParam("newstype");
@@ -33,7 +36,7 @@ ABHNews.NewsDetailPage = (function () {
                         if(item.id == config.newsId){
                             newsFound = true;
                             ct = $(".news-section");
-                            ct.find(".news-img").attr("src",item.image); 
+                            ct.find(".news-img").attr("src", fn.getImageUrl(data.news.type, item.image)); 
                             ct.find(".news-title").text(item.title);
                             ct.find(".publish-date").text(item.pubDate);
                             ct.find(".detail-news").html(item.description);

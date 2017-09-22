@@ -4,7 +4,7 @@ ABHNews.HomePage = (function () {
   var fn, config;
   config = {
     newsRssUrl: "https://api.rss2json.com/v1/api.json?rss_url=http://rss.jagran.com/rss/news/national.xml",
-    newsDetailLink: "/old/newsdetail.html",
+    newsDetailLink: "/website/newsdetail.html",
     showTopNewsCount: 10,
     bxSliderConfig: {
       minSlides: 2,
@@ -33,6 +33,7 @@ ABHNews.HomePage = (function () {
       fn.getLocalNewsData("./news/breakingnews/data.json", fn.showBreakingNews);
       fn.getLocalNewsData("./news/bignews/data.json", fn.showBigNews);
       fn.getLocalNewsData("./news/abhspecialnews/data.json", fn.showABHSpecialNews);
+      fn.getLocalNewsData("./news/gudgudinews/data.json", fn.showGudgudiNews);
       fn.getLocalNewsData("./news/ajabnews/data.json", fn.showAjabNews);
       fn.getLocalNewsData("./news/localnews/data.json", fn.showLocalNews);
       fn.getLocalNewsData("./news/chatpatinews/data.json", fn.showChatpatiNews);
@@ -64,10 +65,13 @@ ABHNews.HomePage = (function () {
       len = itemLen>config.showTopNewsCount ? (itemLen - config.showTopNewsCount) : 0;
       return len;
     },
+    getImageUrl: function(newsType, imageName){
+      return "./news/" + newsType + "/img/" + imageName;
+    },
     showMainNews: function (newsData) {
       var bigNews = $(".big-news"), item;
       item = newsData.news.items[newsData.news.items.length - 1];
-      bigNews.find(".news-img").attr("src", item.image);
+      bigNews.find(".news-img").attr("src", fn.getImageUrl(newsData.news.type, item.image));
       bigNews.find(".news-title").text(item.title);
       bigNews.find(".detail-news").html(item.description);
       bigNews.find(".publish-date").text(item.pubDate);
@@ -93,7 +97,7 @@ ABHNews.HomePage = (function () {
       for (key=len-1; key>=maxNews; key--) {
         var item = data[key];
         var tpl = $($("#breaking-news-headline-tpl").html());
-        tpl.find(".news-img").attr("src", item.image);
+        tpl.find(".news-img").attr("src", fn.getImageUrl(newsData.news.type, item.image));
         tpl.find(".news-title").text(item.title);
         tpl.find(".detail-news").html(item.description);
         tpl.find(".news-detail-link").attr("href", config.newsDetailLink + "?id=" + item.id + "&newstype=" + newsData.news.type);
@@ -126,7 +130,7 @@ ABHNews.HomePage = (function () {
       for (key=len-1; key>=maxNews; key--) {
         var item = data[key];
         var tpl = $($("#news-headline-tpl").html());
-        tpl.find(".news-img").attr("src", item.image);
+        tpl.find(".news-img").attr("src", fn.getImageUrl(newsData.news.type, item.image));
         tpl.find(".news-title").text(item.title);
         tpl.find(".detail-news").html(item.description);
         tpl.find(".news-detail-link").attr("href", config.newsDetailLink + "?id=" + item.id + "&newstype=" + newsData.news.type);
@@ -145,7 +149,24 @@ ABHNews.HomePage = (function () {
       for (count = len - 1; count >= maxShow; count--) {
         var item = data.items[count];
         var tpl = $($("#abh-special-tpl").html());
-        tpl.find(".news-img").attr("src", item.image);
+        tpl.find(".news-img").attr("src", fn.getImageUrl(newsData.news.type, item.image));
+        tpl.find(".news-title").text(item.title);
+        tpl.find(".news-detail-link").attr("href", config.newsDetailLink + "?id=" + item.id + "&newstype=" + newsData.news.type);
+        tpl.find(".publish-date").text(item.pubDate);
+        tpl.find(".news-detail-link").attr("data-newsid", item.id);
+        tpl.find(".news-detail-link").attr("data-newstype", newsData.news.type);
+        newsCt.append(tpl);
+      }
+    },
+    showGudgudiNews: function (newsData) {
+      var data = newsData.news, count = 0, len, maxShow = 0;
+      var newsCt = $(".gudgudi-ct");
+      len = data.items.length;
+      maxShow = len % 3;
+      for (count = len - 1; count >= maxShow; count--) {
+        var item = data.items[count];
+        var tpl = $($("#gudgudi-tpl").html());
+        tpl.find(".news-img").attr("src", fn.getImageUrl(newsData.news.type, item.image));
         tpl.find(".news-title").text(item.title);
         tpl.find(".news-detail-link").attr("href", config.newsDetailLink + "?id=" + item.id + "&newstype=" + newsData.news.type);
         tpl.find(".publish-date").text(item.pubDate);
@@ -162,7 +183,7 @@ ABHNews.HomePage = (function () {
       for (key=len-1; key>=maxNews; key--) {
         var item = data[key];
         var tpl = $($("#news-headline-tpl").html());
-        tpl.find(".news-img").attr("src", item.image);
+        tpl.find(".news-img").attr("src", fn.getImageUrl(newsData.news.type, item.image));
         tpl.find(".news-title").text(item.title);
         tpl.find(".detail-news").html(item.description);
         tpl.find(".news-detail-link").attr("href", config.newsDetailLink + "?id=" + item.id + "&newstype=" + newsData.news.type);
@@ -181,7 +202,7 @@ ABHNews.HomePage = (function () {
       for (key=len-1; key>=maxNews; key--) {
         var item = data[key];
         var tpl = $($("#news-headline-tpl").html());
-        tpl.find(".news-img").attr("src", item.image);
+        tpl.find(".news-img").attr("src", fn.getImageUrl(newsData.news.type, item.image));
         tpl.find(".news-title").text(item.title);
         tpl.find(".detail-news").html(item.description);
         tpl.find(".news-detail-link").attr("href", config.newsDetailLink + "?id=" + item.id + "&newstype=" + newsData.news.type);
@@ -200,7 +221,7 @@ ABHNews.HomePage = (function () {
       for (key=len-1; key>=maxNews; key--) {
         var item = data[key];
         var tpl = $($("#news-headline-tpl").html());
-        tpl.find(".news-img").attr("src", item.image);
+        tpl.find(".news-img").attr("src", fn.getImageUrl(newsData.news.type, item.image));
         tpl.find(".news-title").text(item.title);
         tpl.find(".detail-news").html(item.description);
         tpl.find(".news-detail-link").attr("href", config.newsDetailLink + "?id=" + item.id + "&newstype=" + newsData.news.type);
@@ -217,7 +238,7 @@ ABHNews.HomePage = (function () {
       for (var key in data.items) {
         var item = data.items[key];
         var tpl = $($("#editors-tpl").html());
-        tpl.find(".member-img").attr("src", item.image);
+        tpl.find(".member-img").attr("src", fn.getImageUrl(data.type, item.image));
         tpl.find(".member-name").text(item.name);
         tpl.find(".member-desig").html(item.designation);
         tpl.find(".profile-link").attr("href", item.profileLink);
@@ -243,7 +264,7 @@ ABHNews.HomePage = (function () {
       for (var key in data.items) {
         var item = data.items[key];
         var tpl = $($("#editors-tpl").html());
-        tpl.find(".member-img").attr("src", item.image);
+        tpl.find(".member-img").attr("src", fn.getImageUrl(data.type, item.image));
         tpl.find(".member-name").text(item.name);
         tpl.find(".member-desig").html(item.designation);
         tpl.find(".profile-link").attr("href", item.profileLink);

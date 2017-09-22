@@ -143,6 +143,15 @@
 .abh-special-ct .news-title{
     margin-top: 0;
 }
+.gudgudi-ct{
+    list-style: none;
+    padding-left: 0;
+    
+}
+.gudgudi-ct .gudgudi{
+    border: 1px solid black;
+    border-radius: 10px;
+}
 
 
 /*  */

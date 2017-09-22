@@ -5,35 +5,35 @@
             {
                 "id": 1,
                 "name": "Prem Narayan Singh Pal",
-                "image": "./news/editors/img/prem.jpg",
+                "image": "prem.jpg",
                 "designation": "Chief Editor",
                 "profileLink": "https://www.facebook.com/Pnsinghpalpramukhji/"
             }
             ,{
                 "id": 2,
                 "name": "Anoop Pal",
-                "image": "./news/editors/img/anoop.jpg",
+                "image": "anoop.jpg",
                 "designation": "Sub Editor",
                 "profileLink": "https://www.facebook.com/Anoop160"
             }
             ,{
                 "id": 3,
                 "name": "Deepak Pal",
-                "image": "./news/editors/img/deepakpal.jpg",
+                "image": "deepakpal.jpg",
                 "designation": "Sub Editor",
                 "profileLink": "https://www.facebook.com/Palsahabgoldi/"
             }
             ,{
                 "id": 4,
                 "name": "Yogesh Pal",
-                "image": "./news/editors/img/yogeshpal.jpg",
+                "image": "yogeshpal.jpg",
                 "designation": "Sub Editor",
                 "profileLink": "https://www.facebook.com/Anoop160"
             }
             ,{
                 "id": 5,
                 "name": "Dr. Surendra Vikram Ved",
-                "image": "./news/editors/img/drsurendravikramved.jpg",
+                "image": "drsurendravikramved.jpg",
                 "designation": "Sub Editor",
                 "profileLink": "https://www.facebook.com/Vikramved3899"
             }
