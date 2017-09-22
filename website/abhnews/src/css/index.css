@@ -21,6 +21,7 @@
 }
 .bxslider-2 .news-title{
     font-size: 15px;
+    margin-top: 0;
 }
 .bxslider-2 .event-detail{
   font-size: 12px;
@@ -121,8 +122,8 @@
 }
 .team .member-img{
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
     margin: 0 auto;
 }
 .member-desig{
@@ -137,7 +138,7 @@
 }
 .abh-special-ct .abh-special{
     padding: 10px;
-    height: 90px;
+    height: 95px;
 }
 .abh-special-ct .news-title{
     margin-top: 0;
@@ -180,6 +181,6 @@
        font-size: 15px;
    }
    .bxslider-2-ct .bx-prev{
-       left: 300px !important;
+       left: 230px !important;
    }
 }

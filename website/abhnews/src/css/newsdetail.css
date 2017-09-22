@@ -1,6 +1,10 @@
+
+.news-section .news-title{
+    font-size: 30px;
+}
 .news-section .detail-news{
     font-size: 18px;
-    margin: 15px 0;
+    margin: 25px 0;
 }
 
 
@@ -15,5 +19,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-    
+    .news-section .news-title{
+        font-size: 22px;
+    }
 }
