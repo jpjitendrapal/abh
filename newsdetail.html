@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- Created by: Jitendra Pal -->
+<html>
+
+<head>
+    <!-- Created by: Jitendra Pal -->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.7/jquery.bxslider.min.css"
+    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="./abhnews/src/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="./abhnews/src/css/newsdetail.css" />
+    <title>ABH News</title>
+    <link rel="shortcut icon" href="./abhnews/src/img/home/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.7/jquery.bxslider.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/1d8b1d7aa2.js"></script>
+</head>
+
+<body class="">
+    <div class="container">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                                aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                            <a class="navbar-brand" href="http://localhost:8080/home.html"><img class="logo-img" src="./abhnews/src/img/home/logo.png" /></a>
+                        </div>
+        
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fabhnews2017&width=450&height=30&layout=standard&size=large&show_faces=true&appId=511197092397955"
+                                        width="450" height="30" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                                </li>
+                                <li><a href="/videos.php" >Videos &nbsp;<i class="fa fa-video-camera"></i></i> </a></li>
+                                <li><a href="https://snappy.appypie.com/index/app-download/app_id/3ae68b1d9974" target="_blank">Download App &nbsp;<i class="fa fa-download"></i></i></a></li>
+                                <li><a href="https://www.facebook.com/abhnews2017/" target="_blank">Facebook Page &nbsp;<i class="fa fa-facebook-square"></i> </a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="/aboutus.php">About us &nbsp;&nbsp;<i class="fa fa-address-book-o"></i></a></li>
+                                        <li><a href="/contactus.php">Contact us &nbsp;&nbsp;<i class="fa fa-phone-square"></i></a></li>
+                                        <li><a href="/fbpage.php">FB Posts &nbsp;&nbsp;<i class="fa fa-facebook-square"></i></a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a target="_blank" href="https://techprogrammings.blogspot.in/">Other</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+        
+        <div id="main-ct">
+            <div class="" style="margin-top: 55px;">
+
+                <div class="row">
+                    
+                    <div class="col-xs-12">
+                          <!-- Load Facebook SDK for JavaScript -->
+                          <div id="fb-root"></div>
+                          <script>(function(d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                            if (d.getElementById(id)) return;
+                            js = d.createElement(s); js.id = id;
+                            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=511197092397955";
+                            fjs.parentNode.insertBefore(js, fjs);
+                          }(document, 'script', 'facebook-jssdk'));</script>
+
+                        <!-- Your share button code -->
+                        <div class="fb-share-button" data-href="http://localhost:8080/old/newsdetail.html?id=3&amp;newstype=bignews" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fold%2Fnewsdetail.html%3Fid%3D3%26newstype%3Dbignews&amp;src=sdkpreparse">Share</a></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-7 col-lg-8 text-center site-loader hidden">
+                            <i class="fa fa-3x fa-spinner fa-spin" aria-hidden="true"></i>
+                    </div>
+                    <div class="news-section col-xs-12 col-sm-7 col-lg-8">
+                            <div class="news-title"></div>
+                            <div class="publish-date margin-bottom-20"></div>
+                            <div class="col-xs-12">
+                                <img class="news-img img-responsive" src="" />
+                             </div>
+                            <div class="detail-news col-xs-12"></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-lg-4">
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fabhnews2017%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=511197092397955" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                    </div>
+                    <div class="col-xs-12 other-news-ct">
+                        <div class="border-bottom heading3"><b>खबरें</b></div>
+                        <ul class="other-news">
+                        </ul>
+                    </div>
+                    
+               </div>
+           </div>
+        </div>
+    </div>
+
+    <script type="text/html" id="news-headline-tpl">
+        <li>
+            <a class="news-detail-link" href="">
+                <div class="">
+                    <img class="news-img" src="" />
+                    <div class="">
+                        <div class="news-title"></div>
+                    </div>
+                    <div class="publish-date"></div>
+                    <div class="detail-news hidden"></div>
+                </div>
+            </a>
+        </li>
+    </script>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links row">
+                <div class="col-xs-3 text-center"><a href="/aboutus.html">About us</a></div>
+                <div class="col-xs-3 text-center"><a href="/contactus.html">Contact us</a></div>
+                <div class="col-xs-3 text-center"><a href="/advertisewithus.html">Advertise with us</a></div>
+                <div class="col-xs-3 text-center"><a href="/tandc.html">Terms and Conditions</a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="./abhnews/src/js/common.js"></script>
+    <script src="./abhnews/src/js/newsDetail.js"></script>
+    <!-- Created by: Jitendra Pal -->
+</body>
+
+</html>

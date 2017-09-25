@@ -1,0 +1,83 @@
+.app-header ul{
+    list-style-type: none;
+}
+.app-header li{
+    list-style: none;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+.hidden{
+    display: none;
+}
+.app-header{
+    position: relative;
+}
+.app-header .logo{
+    width: 109px;
+    position: fixed;
+}
+.app-header .menu{
+    height: 40px;
+    background-color: #be2819;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.app-header .menu-item, .drop-down-menu{
+    padding: 10px;
+}
+.more-links{
+    position: relative;
+}
+.drop-down-menu{
+    position: absolute;
+    right: 0;
+    background-color: #be2819;
+}
+
+.footer{
+    background-color: #292526;
+    width: 100%;
+    height: 80px;
+    color: white;
+    font-size: 14px;
+}
+.footer .footer-links{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.footer .footer-links a{
+    text-decoration: none;
+    color: white;
+}
+
+.developer{
+    margin-top: 25px;
+    margin-right: 15px;
+    font-size: 8px;
+    color: grey;
+}
+.developer a{
+    color: grey;
+    text-decoration: none;
+}
+.caret{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}

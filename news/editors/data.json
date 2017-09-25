@@ -1,0 +1,45 @@
+{
+    "news": {
+        "type": "editors",
+        "newsHeading": "हमारे संपादक",
+        "items": [
+            {
+                "id": 1,
+                "name": "Prem Narayan Singh Pal",
+                "image": "prem.jpg",
+                "designation": "Chief Editor",
+                "profileLink": "https://www.facebook.com/Pnsinghpalpramukhji/"
+            }
+            ,{
+                "id": 2,
+                "name": "Anoop Pal",
+                "image": "anoop.jpg",
+                "designation": "Sub Editor",
+                "profileLink": "https://www.facebook.com/Anoop160"
+
+            }
+            ,{
+                "id": 3,
+                "name": "Deepak Pal",
+                "image": "deepakpal.jpg",
+                "designation": "Sub Editor",
+                "profileLink": "https://www.facebook.com/Palsahabgoldi/"
+            }
+            ,{
+                "id": 4,
+                "name": "Yogesh Pal",
+                "image": "yogeshpal.jpg",
+                "designation": "Sub Editor",
+                "profileLink": "https://www.facebook.com/Anoop160"
+            }
+            ,{
+                "id": 5,
+                "name": "Dr. Surendra Vikram Ved",
+                "image": "drsurendravikramved.jpg",
+                "designation": "Sub Editor",
+                "profileLink": "https://www.facebook.com/Vikramved3899"
+            }
+            
+        ] 
+    }
+}

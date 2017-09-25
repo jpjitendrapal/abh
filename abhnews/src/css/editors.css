@@ -1,0 +1,32 @@
+
+
+.team .member-name{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+.team .member-img{
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+}
+/*  */
+@media only screen and (min-width: 767px){
+    
+}
+
+@media only screen and (max-width: 1200px) {
+    .events-ct{
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .team .member{
+        height: 200px;
+    }
+    .team .member-img{
+        height: 150px;
+    }
+}
