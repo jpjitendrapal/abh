@@ -25,8 +25,33 @@ ABHNews.CommonUtils = {
         return len;
     },
     getImageUrl: function (newsType, imageName) {
-        return "./news/" + newsType + "/img/" + imageName;
+        var imageUrl="";
+        if(imageName.startsWith("http:") || imageName.startsWith("www.")){
+            imageUrl = imageName;
+        } else {
+            imageUrl = "/news/" + newsType + "/img/" + imageName;
+        }
+        return imageUrl;
     },
+    elementInViewport: function(el) {
+        var top = el.offsetTop;
+        var left = el.offsetLeft;
+        var width = el.offsetWidth;
+        var height = el.offsetHeight;
+      
+        while(el.offsetParent) {
+          el = el.offsetParent;
+          top += el.offsetTop;
+          left += el.offsetLeft;
+        }
+      
+        return (
+          top >= window.pageYOffset &&
+          left >= window.pageXOffset &&
+          (top + height) <= (window.pageYOffset + window.innerHeight) &&
+          (left + width) <= (window.pageXOffset + window.innerWidth)
+        );
+      }
 
 }
 
